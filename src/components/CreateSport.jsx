@@ -6,7 +6,6 @@ import { v4 as uuid } from 'uuid';
 
 export const CreateSport = () => {
     const {deportes, setDeportes} = useContext(DeporteContext)
-    const navigate = useNavigate()
     const [sport, setSport] = useState({id:uuid(),title:'', image:'', link:'', description:'', category:''})
     const handleChange = (e)=>{
         const {name, value} = e.target
@@ -59,6 +58,7 @@ export const CreateSport = () => {
         setSport({title:'', image:'', link:'', description:'', category:''})
         navigate('/')
     }
+    const navigate = useNavigate()
     const uniqueCategory = Array.from(new Set(deportes.map(deporte=>deporte.category)))
     const tituloRegex = /^.{3,20}$/;
     const descripcionRegex = /^.{50,200}$/;

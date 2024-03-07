@@ -6,7 +6,7 @@ export const Card = ({image, title, description, category, link}) => {
    Motor:'https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-formula-1-racing-flaticons-lineal-color-flat-icons-2.png',
   Mesa:'https://img.icons8.com/dusk/64/restaurant-table.png'}
   return (
-    <div class="flex flex-col w-3/4 md:w-1/4 h-[auto] md:h-[30rem] border box-border transition-shadow hover:shadow-2xl hover:shadow-black">
+    <div class="flex flex-col w-3/4 md:w-1/4 h-[auto] rounded-lg md:h-[30rem] border box-border transition-shadow hover:shadow-2xl hover:shadow-black">
   <div class="flex items-center space-x-4 px-4 py-2">
     <img width="28px" height="28px" src={iconCategory[category]} />
     <span class="text-sm font-semibold">{category}</span>
