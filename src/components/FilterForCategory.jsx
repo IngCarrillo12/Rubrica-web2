@@ -20,8 +20,9 @@ export const FilterForCategory = ({deportes}) => {
   const uniqueCategory = Array.from(new Set(deportes.map(deporte=>deporte.category)))
   return (
     <div className='flex flex-col justify-center w-full gap-2 py-8'>
-      <div className='mx-12 w-1/1 ml-auto border-b-2 '>
-      <select className='h-8 pl-4  border rounded-md focus:outline-none focus:border-2 transition-colors focus:border-blue-500 mb-1'  value={selectedCategory} onChange={handleSportChange}>
+      <div className='flex justify-between mx-12 w-1/1 border-b-2 border-blue-500 pb-2 '>
+      <h1 className=' text-2xl font-bold text-blue-500 md:text-4xl  '>Deportes:</h1>
+      <select className='h-8 pl-4  border rounded-md focus:outline-none border-blue-300 focus:border-2 transition-colors focus:border-blue-500 mb-1'  value={selectedCategory} onChange={handleSportChange}>
       <option value='todos'>Todos</option>
         {
           uniqueCategory.map(categoria=><option key={categoria} value={categoria}>{categoria}</option>)

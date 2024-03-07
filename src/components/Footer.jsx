@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className='w-full md:w-1/3 flex flex-col items-center justify-center gap-2'>
             <div className='flex gap-4'>
             <img width="32" height="32" src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/external-sport-back-to-school-wanicon-lineal-color-wanicon.png" alt="external-sport-back-to-school-wanicon-lineal-color-wanicon"/>
-            <h2 className='font-bold text-2xl '>SportWin</h2>
+            <h2 className='font-bold text-2xl text-blue-500 '>SportWin</h2>
             </div>
             <ul className='flex flex-col gap-1 items-center justify-center'>
                 <li className='font-base text-base transition-colors hover:text-blue-500'>
@@ -19,7 +19,7 @@ export const Footer = () => {
             </ul>
         </div>
         <div className='flex flex-col items-center justify-center gap-1 w-full md:w-1/3'>
-            <h2 className='font-bold text-xl'> Redes Sociales:</h2>
+            <h2 className='font-bold text-xl  text-blue-500'> Redes Sociales:</h2>
             <ul className='flex justify-around items-center gap-8'>
                 <li>
                     <Link><img className='transition-transform hover:w-[50px]' width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></Link>
@@ -33,7 +33,7 @@ export const Footer = () => {
             </ul>
         </div>
         <div className='w-full md:w-1/3 flex flex-col items-center justify-center gap-2 '>
-            <h2 className='font-bold text-xl'>Soporte</h2>
+            <h2 className='font-bold text-xl  text-blue-500'>Soporte</h2>
             <p className='font-base text-base text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, itaque vitae? Totam ducimus repudiandae optio ratione animi, eum sapiente voluptate ipsam iusto sint dolorem blanditiis, quidem facilis voluptatibus ab. Fugit.</p>
         </div>
     </footer>
